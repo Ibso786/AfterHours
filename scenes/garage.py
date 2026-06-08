@@ -10,8 +10,12 @@ class GarageScene:
     def handle_event(self,e):
         pass
 
-    def update(self,dt):
-        pass
+def handle_event(self,e):
+
+    if e.type == pygame.KEYDOWN:
+
+        if e.key == pygame.K_r:
+            self.game.change_scene("race")
 
     def draw(self,screen):
         screen.fill((15,15,25))
@@ -28,6 +32,8 @@ class GarageScene:
         f=pygame.font.SysFont("consolas",28)
 
         screen.blit(f.render(f"Cash: ${self.profile['cash']}",True,(255,255,255)),(90,150))
+        screen.blit(f.render(f"Cash: ${self.profile['cash']}",True,(255,255,255)),(90,150))
+        screen.blit(f.render(f"Fuel: {self.profile['fuel']}%",True,(255,255,255)),(90,190))
         screen.blit(f.render(f"Rep: {self.profile['rep']}",True,(255,255,255)),(90,190))
         screen.blit(f.render(f"Current Car: {car}",True,(255,255,255)),(90,240))
 
