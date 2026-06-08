@@ -1,0 +1,58 @@
+
+AFTERHOURS - DEVELOPMENT KIT V1
+
+Core Vision:
+- Pixel-art underground tuner RPG
+- Every car can become competitive
+- Race outcomes simulated but visually animated
+- Turbo spool, supercharger, nitrous animations
+- Maintenance, fuel, reputation, economy
+
+Scenes:
+1. Splash Screen
+2. Main Menu
+3. Garage
+4. Dealership
+5. Tuning Shop
+6. Dyno
+7. Race Screen
+8. Profile/Stats
+
+Data Models:
+Car:
+- name
+- hp
+- weight
+- drivetrain
+- reliability
+- fuel
+- oil
+- cleanliness
+- upgrades[]
+
+Upgrade Types:
+- Intake
+- Exhaust
+- ECU
+- Turbo
+- Supercharger
+- Nitrous
+- Tires
+- Suspension
+- Brakes
+- Engine Swap
+
+Race HUD:
+- RPM
+- Boost PSI
+- Gear
+- Speed
+- Position
+- Animated turbo spool meter
+
+Milestone 1:
+- Fullscreen engine
+- Pixel UI
+- Animated title screen
+- Garage
+- Save system
